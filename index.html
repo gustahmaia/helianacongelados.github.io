@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Heliana Congelados</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    html,
+    body {
+        height: 100vh;
+        padding-left: 3%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-justify: justify;
+        justify-content: center;
+        font-size: 1.9rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    main .title {
+        font-size: 2.6rem;
+        font-weight: bold;
+        padding: 16px;
+    }
+
+    main .sub-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        padding: 16px;
+
+    }
+
+    .cardapio {
+        width: 60%;
+        padding: 16px;
+        margin: 16px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border: none;
+        background-color: #032ce4;
+        color: #FFF;
+        font-weight: bold;
+        border-radius: 6px;
+        box-shadow: 2px 8px 8px 4px rgba(0, 0, 0, 0.2);
+        transition: all .15s ease-in-out;
+    }
+
+    .cardapio:focus {
+        animation: click .25s normal;
+    }
+
+    @keyframes click {
+        from {
+            transform: scale(0.8);
+        }
+
+        to {
+            transform: scale(1.0);
+        }
+    }
+
+    .footer {
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 16px;
+    }
+</style>
+
+<body>
+    <main>
+        <section>
+            <div class="title">
+                Heliana Congelados
+            </div>
+            <div class="sub-title">
+                <p>
+                    agradece sua visita
+                </p>
+                <p>
+                    Fique à vontade para analisar nosso cardápio
+                </p>
+            </div>
+            <div>
+            </div>
+            <button class="cardapio" onclick="clickCardapio()">Cardápio</button>
+            <div class="footer">Lembre-se a entrega é grátis !!</div>
+        </section>
+    </main>
+</body>
+<script>
+
+    function clickCardapio() {
+        window.open('https://drive.google.com/file/d/1ozodJlMOKEietBNunvy8xSr9BTl5Qwdm/view?usp=sharing');
+    }
+
+</script>
+
+
+</html>
