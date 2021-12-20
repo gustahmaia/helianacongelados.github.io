@@ -111,7 +111,9 @@
 <script>
 
     function clickCardapio() {
-        window.open('https://drive.google.com/file/d/1ozodJlMOKEietBNunvy8xSr9BTl5Qwdm/view?usp=sharing');
+        var url = window.location.href
+        url = url.replace("index.html", "cardapio/index.html")
+        window.open(url);
     }
 
 </script>
